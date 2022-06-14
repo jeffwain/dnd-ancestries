@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+  <title>Ancestry and Heritage Builder</title>
+  <META charset="UTF-8">
+  <META name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <META NAME='expires' CONTENT='never' />
+  <META NAME='language' CONTENT='English, EN' />
+  <META name="description" content="">
+  <META name="keywords" content="HTML5,CSS,JavaScript, html5 session storage, html5 local storage">
+  <META name="author" content="jeffwain.com">
+
+  <script src="properties.js"></script>
+  <script src="traits.js"></script>
+  <script src="nav.js"></script>
+  <script src="ui.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+  <script src="sidebar.js"></script>
+  <script src="setup.js"></script>
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="StorageStyle.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=IM+Fell+Great+Primer&family=IM+Fell+Great+Primer+SC&family=IM+Fell+English+SC&family=Assistant&family=IM+Fell+English:ital@0;1&display=swap"
+    rel="stylesheet">
+</head>
+
+
+<body onload="setup();">
+  <header>
+    <h1>Ancestry and Lineages Character Builder</h1>
+    <nav class="tabs">
+    </nav>
+  </header>
+  <main id="overview">
+    <div id="content">
+      <form name="skills">
+      </form>
+    </div>
+    <aside id="selected-stats" class="sidebar">
+    </aside>
+    <form name=ShoppingList>
+      <div id="items_table">
+        <h3>Debug</h3>
+        <table id=list></table>
+        <p>
+          <label><input type=button value="Clear" onclick="storageClear();debugRefresh();">
+            <i>* Delete all items</i></label>
+        </p>
+      </div>
+    </form>
+  </main>
+</body>
+
+</html>
