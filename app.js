@@ -73,6 +73,11 @@ function setSize(selected) {
     // console.log(size);
     if (size.name != selectedSize) {
       otherSize = size.name;
+      console.log(`#subtype-${selectedSize}`);
+      var thisSize = document.getElementById(`subtype-${selectedSize}`);
+      thisSize.classList.remove("subtype--disabled");
+      var theOtherSize = document.getElementById(`subtype-${otherSize}`);
+      theOtherSize.classList.add("subtype--disabled");
     }
   });
 
@@ -95,7 +100,7 @@ function setSize(selected) {
     if (checkbox.name.includes(selectedSize)) {
       checkbox.removeAttribute("disabled");
     }
-    else { checkbox.setAttribute("disabled",""); }
+    else { checkbox.disabled = true; }
   });
 
   // Finally, update the size.

@@ -17,7 +17,7 @@ function generateAccordion(type, content, showPoints = false) {
   }
   var points = showPoints ? `<div class="cost">0 points</div>` : "";
   return `
-  <div class='accordion'>
+  
     <div class="section-title-container">
       <h2 class='section-title show'>${type.title}</h2>
       ${extraControls}
@@ -27,7 +27,7 @@ function generateAccordion(type, content, showPoints = false) {
       <p class='section-description'>${description}</p>
       ${content}
     </div>
-  </div>`;
+  `;
 }
 
 /*
@@ -85,7 +85,7 @@ function generateSubtypeCategory(subtype, parentType, handler) {
   <div id="subtype-${subtype.name}" class="two-columns trait-subtype">
     <input type="checkbox" name="${parentType}" value="${subtype.name}" id="${parentType}-${subtype.name}" onclick="${handler}" class="category-selection category-selection--hidden">
     <div class="accordion">
-      <label class="h4 section-title show" for="${parentType}-${subtype.name}">${subtype.title}</label>
+      <label class="h4 section-title show" for="${parentType}-${subtype.name}">${subtype.title}<span class="subtype">Planar influence</span></label>
       <div class='accordion-content ${parentType}-${subtype.name}-traits ${parentType}-traits'>
         <p class='section-description'>${subtype.description}</p>
         <div class="trait-format--checkbox traits-list">

@@ -2,7 +2,7 @@ var data = {
   intro: {
     name: "intro",
     title: "1. Creating Your Character",
-    description: "Your first step in creating a character is to consider your character's ancestry, the culture they grew up in, and any exceptional occurrences that may have shaped them. Start by determining what you look like and what <dfn></dfn>race(s) make up your unique ancestry. You choose which ability scores you are proficient in, your size, if you have darkvision, bloodlines representing your ancestry, cultures representing your shaping influences, and what languages you know.</p><h3> Start with an existing race template</h3><select id='race-templates' name='races' onchange='setRace(this)'></select><h3>Heritage Point Buy Rules</h3><p class='section-description'>You have <mark>15 points to spend on your heritage traits</mark>. You may pick traits from <mark>up to two bloodlines</mark> and <mark>up to two cultures</mark>. The cost of each score is shown in parenthesis following the name of the trait.You can only take a unique trait once from any one source. You are not required to spend all your heritage trait points, but you cannot spend above your maximum."
+    description: "Your first step in creating a character is to consider your character's ancestry, the culture they grew up in, and any exceptional occurrences that may have shaped them. Start by determining what you look like and what <dfn></dfn>race(s) make up your unique ancestry. You choose which ability scores you are proficient in, your size, if you have darkvision, bloodlines representing your ancestry, cultures representing your shaping influences, and what languages you know.</p><h3> Start with an existing race template</h3><select id='race-templates' name='races' onchange='setRace(this)'></select><h3>Heritage Point Buy Rules</h3><p class='section-description'>You have <strong>16 points to spend on your heritage traits</strong>. You may pick traits from <strong>up to two bloodlines</strong> and <strong>up to two cultures</strong>. The cost of each score is shown in parenthesis following the name of the trait.You can only take a unique trait once from any one source. You are not required to spend all your heritage trait points, but you cannot spend above your maximum."
   },
   abilityscores: {
     name: "abilityscores",
@@ -52,7 +52,7 @@ var data = {
   creaturetype: {
     name: "creaturetype",
     title: "2. Determine Your Creature Type",
-    description: "Every creature in D&D, including every player character, has a special tag in the rules that identifies the type of creature they are. Most player characters are of the Humanoid type. Unless you and your DM decide otherwise, your character's creature type is Humanoid.   </p><p>Here's a list of the game's creature types in alphabetical order: Aberration, Beast, Celestial, Construct, Dragon, Elemental, Fey, Fiend, Giant, Humanoid, Monstrosity, Ooze, Plant, Undead. These types don't have rules themselves, but some rules in the game affect creatures of certain types in different ways. For example, the cure wounds spell doesn't work on a Construct or an Undead.",
+    description: "Every creature in D&D, including every player character, has a special tag in the rules that identifies the type of creature they are. Most player characters are of the Humanoid type. Unless you and your DM decide otherwise, your character's creature type is Humanoid.   </p><p class='section-description'>Here's a list of the game's creature types in alphabetical order: Aberration, Beast, Celestial, Construct, Dragon, Elemental, Fey, Fiend, Giant, Humanoid, Monstrosity, Ooze, Plant, Undead. These types don't have rules themselves, but some rules in the game affect creatures of certain types in different ways. For example, the cure wounds spell doesn't work on a Construct or an Undead.",
     type: "text"
   },
   size: {
@@ -89,7 +89,7 @@ var data = {
   },
   bloodline: {
     name: "bloodline",
-    title: "Choose your Bloodlines",
+    title: "Choose your bloodline traits",
     description: "You can <strong>choose up to 2 bloodlines</strong> from the following options to make up your heritage.",
     type: "bloodline",
     categories: {

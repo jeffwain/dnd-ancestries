@@ -13,17 +13,18 @@ const sidebar = {
   init() {
     console.log(`sidebar.init()`);
     document.querySelector("aside#selected-stats").innerHTML = `
+      <h2>Your character</h2>
       <div class="property">
         <h3 class="stat-title">Size</h3>
-        <div id="stat-size">Medium</div>
+        <p id="stat-size">Medium</p>
       </div>
       <div class="property">
         <h3 class="stat-title">Speed</h3>
-        <div id="stat-speed">30 ft.</div>
+        <p id="stat-speed">30 ft.</p>
       </div>
       <div class="property">
         <h3 class="stat-title">Vision</h3>
-        <div id="stat-vision">Normal vision</div>
+        <p id="stat-vision">Normal vision</p>
       </div>
       <div class="property">
         <h3 class="stat-title">Languages</h3>
@@ -33,10 +34,10 @@ const sidebar = {
       </div>
       <div class="points property">
         <h3 id="cost-title">Total points</h3>
-        <div class="cost-label">
-          <div id="cost-spent">${this.totalSpent}</div>
-          <div id="cost-available">/${this.totalPoints}</div>
-        </div>
+        <p class="cost-label">
+          <div id="cost-spent" class="h3">${this.totalSpent}</div>
+          <div id="cost-available" class="h3">/${this.totalPoints}</div>
+        </p>
       </div>
       <div class="selected-traits">
         <h3>Traits</h3>
@@ -138,7 +139,7 @@ const sidebar = {
     });
 
     spokenLanguages.forEach(language => {
-      toReturn += `<div class='language'>${language}</div>`;
+      toReturn += `<p class='language'>${language}</p>`;
     });
 
 

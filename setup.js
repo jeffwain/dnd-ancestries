@@ -35,8 +35,8 @@ function loadPage() {
       initializeSection("intro");
       initializeRaces();
       initializeSection("creaturetype");
-      initializeSection("abilityscores");
-      initializeSection("languages", "setLanguage(this)");
+      // initializeSection("abilityscores");
+      // initializeSection("languages", "setLanguage(this)");
       initializeSection("size", "setSize(this)");
       initializeSize();
       initializeSection("speed");
@@ -154,11 +154,11 @@ function initializeSection(key, handler) {
       break;
 
     case "bloodline":
-      console.log(`Generating bloodlines for ${type.name}.`);
+      console.log(`Generating bloodline traits for ${type.name}.`);
       Object.entries(type.categories).forEach(category => {
         console.log(` - Creating category of ${category[1]}`);
 
-        content += `<h3 class="trait-category">${category[1]}</h3>`;
+        // content += `<h3 class="trait-category">${category[1]}</h3>`;
         var inCategory = Object.values(type.options).filter(subtype => subtype.category == category[0]);
         console.log(inCategory);
 
