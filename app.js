@@ -96,6 +96,7 @@ function setSize(selected) {
     if (checkbox.checked === true) {
       checkbox.checked = false;
       removeTrait(checkbox.value);
+      checkbox.classList.remove("selected");
     }
     if (checkbox.name.includes(selectedSize)) {
       checkbox.removeAttribute("disabled");
